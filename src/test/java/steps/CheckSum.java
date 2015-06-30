@@ -17,13 +17,13 @@ public class CheckSum {
     iban = new Iban();
   }
 
-  @When("ibanNumber is <(.+)>")
+  @When("ibanNumber is (.+)")
   public int ibanNumber_is_(String ibanNumber) throws Throwable {
     result = iban.checkSum(ibanNumber);
     return result;
   }
 
-  @Then("checksum should be <(\\d+)>")
+  @Then("checksum should be (\\d+)")
   public void checksum_should_be_(String arg1) throws Throwable {
     assertEquals(String.valueOf(result), arg1);
   }

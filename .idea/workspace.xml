@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68cc1c4-ee4c-4d6a-8eff-5fb34155ffdd" name="Default" comment="" />
+    <list default="true" id="d68cc1c4-ee4c-4d6a-8eff-5fb34155ffdd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/steps/ValidLengthIban.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/features/test.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/features/test.feature" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/steps/CheckSum.class" afterPath="$PROJECT_DIR$/target/test-classes/steps/CheckSum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/CheckSum.java" afterPath="$PROJECT_DIR$/src/test/java/steps/CheckSum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/RunTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/RunTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/checkSum.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/checkSum.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/features/checkSum.feature" afterPath="$PROJECT_DIR$/target/test-classes/features/checkSum.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="iban-cucumber.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/checkSum.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="9" selection-start-column="32" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/CheckSum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#289#290#0" expanded="true" />
@@ -68,34 +80,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RunTest.java">
+      <file leaf-file-name="validLengthIban.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30100334">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidLengthIban.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/ValidLengthIban.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/test.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlphabetCalculator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/iban/AlphabetCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.049342107">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -135,10 +139,14 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/checkSum" />
         <option value="$PROJECT_DIR$/src/test/java/steps/RunTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/CheckSumStepDefs.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/CheckSum.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/features/test" />
         <option value="$PROJECT_DIR$/src/test/java/RunTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/validLengthIbanNumber.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/CheckSum.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/checkSum.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/ValidLengthIban.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature" />
       </list>
     </option>
   </component>
@@ -193,9 +201,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1023" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -301,6 +308,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iban-cucumber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iban-cucumber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -350,7 +383,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../iban" />
@@ -367,7 +400,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: test (1)">
+  <component name="RunManager" selected="Cucumber java.Feature: checkSum (1)">
     <configuration default="false" name="Feature: checkSum" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -390,56 +423,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="iban-cucumber" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Feature: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/test" />
-      <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: test" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="iban-cucumber" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="features in iban-cucumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="iban-cucumber" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="features" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="All Features in: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -477,6 +460,54 @@
       <option name="GLUE" value="steps" />
       <option name="myNameFilter" value="" />
       <option name="myGeneratedName" value="Feature: test" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="iban-cucumber" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature: checkSum (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/checkSum.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: checkSum" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="iban-cucumber" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature: validLengthIban" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: validLengthIban" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
@@ -705,18 +736,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: checkSum" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.features in iban-cucumber" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.All Features in: test" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: test (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.All Features in: test" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: checkSum (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: validLengthIban" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: test (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.All Features in: test" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: checkSum" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.features in iban-cucumber" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: test" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: checkSum (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: validLengthIban" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.All Features in: test" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: checkSum" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -731,26 +762,26 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3480663" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3281768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39337015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3731656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -836,26 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CheckSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/iban/Iban.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.2/cucumber-core-1.2.2.jar!/cucumber/api/CucumberOptions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8">
@@ -890,26 +901,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/test.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/java/iban/AlphabetCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CheckSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/checkSum.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="9" selection-start-column="32" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/iban/AlphabetCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/iban/Iban.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.049342107">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ValidLengthIban.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30100334">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
