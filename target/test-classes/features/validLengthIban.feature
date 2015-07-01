@@ -5,8 +5,8 @@ Feature: Valid length iban number
   So that I can
 
   Scenario:
-    #Given an invalid iban number
-    When the iban number is larger then 34 characters long
+    #Given an invalid iban number larger then 34 characters long
+    When iban number is 12345678901234567890123456789012345
     Then it is an invalid iban number
 
 
