@@ -4,36 +4,33 @@ import java.math.BigInteger;
 
 public class Iban {
 
-  public Boolean validate(String iban) {
-    if (iban != "") {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   public Boolean validateLength(String iban) {
-    if (iban.length() < 35) {
+    return iban.length() < 35;
+  }
+
+  public Boolean validateCountryCode(String iban) {
+    return iban.startsWith("NL");
+  }
+
+  public boolean validateBankCode(String arg1) {
+    char arg2[] = arg1.toCharArray();
+
+    if (arg1.equals("RABO") || arg1.equals("INGB") || arg1.equals("ABNA")) {
+      return true;
+    } else if (arg2.length == 4) {
+      for (char c : arg2) {
+        if (!Character.isLetter(c)) {
+          return false;
+        }
+      }
       return true;
     } else {
       return false;
     }
   }
 
-
-  public Boolean validateNL(String iban) {
-    if (iban.startsWith("NL")) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  public int checkSum(String iban) {
-    String ibanWithoutSpace = iban.replaceAll("\\s+", "");
-    String accountNumber = ibanWithoutSpace.substring(8);
-    String bankNumber = ibanWithoutSpace.substring(4, 8);
-    String countyNumber = ibanWithoutSpace.substring(0, 2);
+  public int validateCheckSum(String countryCode, String bankNumber, String accountNumber) {
+    accountNumber = accountNumber.replaceAll("\\s+", "");
 
     while (accountNumber.length() < 10) {
       accountNumber = "0" + accountNumber;
@@ -43,7 +40,7 @@ public class Iban {
     StringBuffer sb = new StringBuffer(accountNumber);
     StringBuffer sb2 = new StringBuffer();
 
-    for (char x: bankNumber.toCharArray()) {
+    for (char x : bankNumber.toCharArray()) {
       int value = result.calculator(String.valueOf(x));
       sb2.append(value);
     }
@@ -52,7 +49,7 @@ public class Iban {
 
     accountNumber = String.valueOf(sb);
 
-    for (char x: countyNumber.toCharArray()) {
+    for (char x : countryCode.toCharArray()) {
       int value = result.calculator(String.valueOf(x));
       accountNumber = accountNumber.concat(String.valueOf(value));
     }
@@ -70,8 +67,6 @@ public class Iban {
     i1 = bi3.intValue();
 
     int checkSum = 98 - i1;
-
-    System.out.println("CheckSum: " + checkSum);
 
     return checkSum;
   }

@@ -7,26 +7,26 @@ import iban.Iban;
 
 import static org.junit.Assert.assertEquals;
 
-public class ValidLengthIban {
+public class ValidBankCode {
 
   private Iban iban;
 
   boolean result;
   boolean value;
 
-  @Before("@ValidLengthIban")
+  @Before("@ValidateBankCode")
   public void before() {
     iban = new Iban();
   }
 
-  @When("iban number is (.+)")
-  public boolean iban_number_is_var(String arg1) throws Throwable {
-    result = iban.validateLength(arg1);
+  @When("the bank code is (.+)")
+  public boolean the_bank_code_is_var(String arg1) throws Throwable {
+    result = iban.validateBankCode(arg1);
     return result;
   }
 
-  @Then("it is a (.+) iban length")
-  public void it_is_a_var_iban_length(String arg2) throws Throwable {
+  @Then("this bank code is (.+)")
+  public void this_bank_code_is_var(String arg2) throws Throwable {
     if (arg2.equals("invalid")) {
       value = false;
     } else if (arg2.equals("valid")) {

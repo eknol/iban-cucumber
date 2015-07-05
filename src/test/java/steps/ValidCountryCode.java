@@ -7,26 +7,26 @@ import iban.Iban;
 
 import static org.junit.Assert.assertEquals;
 
-public class ValidLengthIban {
+public class ValidCountryCode {
 
   private Iban iban;
 
   boolean result;
   boolean value;
 
-  @Before("@ValidLengthIban")
+  @Before("@ValidateCountryCode")
   public void before() {
     iban = new Iban();
   }
 
-  @When("iban number is (.+)")
-  public boolean iban_number_is_var(String arg1) throws Throwable {
-    result = iban.validateLength(arg1);
+  @When("a Dutch (.+) starts with NL")
+  public boolean a_Dutch_var_starts_with_NL(String arg1) throws Throwable {
+    result = iban.validateCountryCode(arg1);
     return result;
   }
 
-  @Then("it is a (.+) iban length")
-  public void it_is_a_var_iban_length(String arg2) throws Throwable {
+  @Then("it has a (.+) country code")
+  public void it_has_a_var_country_code(String arg2) throws Throwable {
     if (arg2.equals("invalid")) {
       value = false;
     } else if (arg2.equals("valid")) {
