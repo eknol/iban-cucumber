@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d68cc1c4-ee4c-4d6a-8eff-5fb34155ffdd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/iban/Iban.class" afterPath="$PROJECT_DIR$/target/classes/iban/Iban.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/steps/ValidLengthIban.class" afterPath="$PROJECT_DIR$/target/test-classes/steps/ValidLengthIban.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/RunTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/RunTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/features/validLengthIban.feature" afterPath="$PROJECT_DIR$/target/test-classes/features/validLengthIban.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iban-cucumber.iws" />
@@ -121,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iban.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Iban.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/iban/Iban.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9360374">
+            <state vertical-scroll-proportion="0.0">
               <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#111#112#0" expanded="true" />
@@ -133,6 +129,19 @@
                 <element signature="e#237#238#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.073529415">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -190,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/ValidLengthIban.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/validLengthIban.feature" />
         <option value="$PROJECT_DIR$/src/main/java/iban/Iban.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1092,7 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/iban/Iban.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9360374">
+        <state vertical-scroll-proportion="0.0">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#111#112#0" expanded="true" />
@@ -1101,6 +1111,17 @@
             <element signature="e#237#238#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.073529415">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
