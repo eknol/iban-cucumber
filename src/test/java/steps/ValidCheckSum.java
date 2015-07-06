@@ -19,7 +19,8 @@ public class ValidCheckSum {
 
   @When("the country code is (.+), bank number is (.+) and account number is (.+)")
   public int the_country_code_is_var_bank_number_is_var_and_account_number_is_var (String arg1, String arg2, String arg3) throws Throwable {
-    result = iban.validateCheckSum(arg1, arg2, arg3);
+    //TODO Complete this method, add your code here
+    //result = iban.validateCheckSum(arg1, arg2, arg3);
     return result;
   }
 

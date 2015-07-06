@@ -19,12 +19,6 @@ public class ValidBankCode {
     iban = new Iban();
   }
 
-  @When("the bank code is (.+)")
-  public boolean the_bank_code_is_var(String arg1) throws Throwable {
-    result = iban.validateBankCode(arg1);
-    return result;
-  }
-
   //TODO complete this implementation of validBankCode.feature, add your code here
 
 }
