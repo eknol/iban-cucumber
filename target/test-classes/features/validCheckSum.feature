@@ -5,5 +5,5 @@ Feature: Iban validation
   So that I know that I can trust a given iban number
 
   Scenario: checkSum iban number
-    When the country code is NL, bank number is INGB and account number is 1 2345 67
+    When the country code is NL, bank number is INGB and account number is 0001 2345 67
     Then the checkSum should be 20

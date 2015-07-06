@@ -21,7 +21,7 @@ public class ValidLengthIban {
 
   @When("iban number is (.+)")
   public boolean iban_number_is_var(String arg1) throws Throwable {
-    result = iban.validateLength(arg1);
+    //TODO Complete this method, add your code here
     return result;
   }
 

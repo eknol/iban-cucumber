@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.012" errors="0" skipped="0" tests="48" name="RunTest">
+<testsuite failures="6" time="0.016" errors="0" skipped="0" tests="51" name="RunTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -73,46 +73,99 @@
   <testcase time="0" classname="| INGB | valid |" name="When the bank code is INGB"/>
   <testcase time="0" classname="| INGB | valid |" name="Then this bank code is valid"/>
   <testcase time="0" classname="| INGB | valid |" name="| INGB | valid |"/>
-  <testcase time="0.001" classname="| ABNA | valid |" name="When the bank code is ABNA"/>
-  <testcase time="0.001" classname="| ABNA | valid |" name="Then this bank code is valid"/>
-  <testcase time="0.001" classname="| ABNA | valid |" name="| ABNA | valid |"/>
-  <testcase time="0" classname="| Rabobank | invalid |" name="When the bank code is Rabobank"/>
+  <testcase time="0" classname="| ABNA | valid |" name="When the bank code is ABNA"/>
+  <testcase time="0" classname="| ABNA | valid |" name="Then this bank code is valid"/>
+  <testcase time="0" classname="| ABNA | valid |" name="| ABNA | valid |"/>
+  <testcase time="0.001" classname="| Rabobank | invalid |" name="When the bank code is Rabobank"/>
   <testcase time="0" classname="| Rabobank | invalid |" name="Then this bank code is invalid"/>
   <testcase time="0" classname="| Rabobank | invalid |" name="| Rabobank | invalid |"/>
   <testcase time="0.001" classname="| ING | invalid |" name="When the bank code is ING"/>
   <testcase time="0" classname="| ING | invalid |" name="Then this bank code is invalid"/>
   <testcase time="0" classname="| ING | invalid |" name="| ING | invalid |"/>
   <testcase time="0" classname="| ABNAM | invalid |" name="When the bank code is ABNAM"/>
-  <testcase time="0" classname="| ABNAM | invalid |" name="Then this bank code is invalid"/>
-  <testcase time="0" classname="| ABNAM | invalid |" name="| ABNAM | invalid |"/>
-  <testcase time="0.001" classname="| 123 | invalid |" name="When the bank code is 123"/>
+  <testcase time="0.001" classname="| ABNAM | invalid |" name="Then this bank code is invalid"/>
+  <testcase time="0.001" classname="| ABNAM | invalid |" name="| ABNAM | invalid |"/>
+  <testcase time="0" classname="| 123 | invalid |" name="When the bank code is 123"/>
   <testcase time="0" classname="| 123 | invalid |" name="Then this bank code is invalid"/>
   <testcase time="0" classname="| 123 | invalid |" name="| 123 | invalid |"/>
   <testcase time="0" classname="| !2B | invalid |" name="When the bank code is !2B"/>
-  <testcase time="0" classname="| !2B | invalid |" name="Then this bank code is invalid"/>
-  <testcase time="0" classname="| !2B | invalid |" name="| !2B | invalid |"/>
+  <testcase time="0.001" classname="| !2B | invalid |" name="Then this bank code is invalid"/>
+  <testcase time="0.001" classname="| !2B | invalid |" name="| !2B | invalid |"/>
   <testcase time="0" classname="| ABC1 | invalid |" name="When the bank code is ABC1"/>
   <testcase time="0" classname="| ABC1 | invalid |" name="Then this bank code is invalid"/>
-  <testcase time="0.001" classname="| ABC1 | invalid |" name="| ABC1 | invalid |"/>
-  <testcase time="0" classname="Scenario: checkSum" name="When ibanNumber is NL00 INGB 0001 2345 67"/>
-  <testcase time="0" classname="Scenario: checkSum" name="Then checkSum should be 20"/>
-  <testcase time="0" classname="Scenario: checkSum" name="Scenario: checkSum"/>
-  <testcase time="0.001" classname="| NL 20 INGB 0001 2345 67 | valid |" name="When a Dutch NL 20 INGB 0001 2345 67 starts with NL"/>
+  <testcase time="0" classname="| ABC1 | invalid |" name="| ABC1 | invalid |"/>
+  <testcase time="0" classname="Scenario: checkSum iban number" name="When the country code is NL, bank number is INGB and account number is 0001 2345 67"/>
+  <testcase time="0.002" classname="Scenario: checkSum iban number" name="Then the checkSum should be 20">
+    <failure message="expected:&lt;[-69]&gt; but was:&lt;[20]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[-69]&gt; but was:&lt;[20]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidCheckSum.the_checkSum_should_be_var(ValidCheckSum.java:28)
+	at ✽.Then the checkSum should be 20(validCheckSum.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0.003" classname="Scenario: checkSum iban number" name="Scenario: checkSum iban number">
+    <failure message="expected:&lt;[-69]&gt; but was:&lt;[20]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[-69]&gt; but was:&lt;[20]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidCheckSum.the_checkSum_should_be_var(ValidCheckSum.java:28)
+	at ✽.Then the checkSum should be 20(validCheckSum.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0" classname="| NL 20 INGB 0001 2345 67 | valid |" name="When a Dutch NL 20 INGB 0001 2345 67 starts with NL"/>
   <testcase time="0" classname="| NL 20 INGB 0001 2345 67 | valid |" name="Then it has a valid country code"/>
   <testcase time="0" classname="| NL 20 INGB 0001 2345 67 | valid |" name="| NL 20 INGB 0001 2345 67 | valid |"/>
-  <testcase time="0" classname="| Ned | invalid |" name="When a Dutch Ned starts with NL"/>
-  <testcase time="0" classname="| Ned | invalid |" name="Then it has a invalid country code"/>
-  <testcase time="0" classname="| Ned | invalid |" name="| Ned | invalid |"/>
-  <testcase time="0.001" classname="| 12 | invalid |" name="When a Dutch 12 starts with NL"/>
-  <testcase time="0" classname="| 12 | invalid |" name="Then it has a invalid country code"/>
-  <testcase time="0" classname="| 12 | invalid |" name="| 12 | invalid |"/>
-  <testcase time="0" classname="| DU | invalid |" name="When a Dutch DU starts with NL"/>
-  <testcase time="0" classname="| DU | invalid |" name="Then it has a invalid country code"/>
-  <testcase time="0" classname="| DU | invalid |" name="| DU | invalid |"/>
-  <testcase time="0.001" classname="| 12345678901234567890123456789012345 | invalid |" name="When iban number is 12345678901234567890123456789012345"/>
-  <testcase time="0" classname="| 12345678901234567890123456789012345 | invalid |" name="Then it is an invalid iban length"/>
-  <testcase time="0.001" classname="| 12345678901234567890123456789012345 | invalid |" name="| 12345678901234567890123456789012345 | invalid |"/>
+  <testcase time="0" classname="| Ned 20 INGB 0001 2345 67 | invalid |" name="When a Dutch Ned 20 INGB 0001 2345 67 starts with NL"/>
+  <testcase time="0" classname="| Ned 20 INGB 0001 2345 67 | invalid |" name="Then it has a invalid country code"/>
+  <testcase time="0" classname="| Ned 20 INGB 0001 2345 67 | invalid |" name="| Ned 20 INGB 0001 2345 67 | invalid |"/>
+  <testcase time="0" classname="| 20 INGB 0001 2345 67 | invalid |" name="When a Dutch 20 INGB 0001 2345 67 starts with NL"/>
+  <testcase time="0" classname="| 20 INGB 0001 2345 67 | invalid |" name="Then it has a invalid country code"/>
+  <testcase time="0" classname="| 20 INGB 0001 2345 67 | invalid |" name="| 20 INGB 0001 2345 67 | invalid |"/>
+  <testcase time="0" classname="| DU 20 INGB 0001 2345 67 | invalid |" name="When a Dutch DU 20 INGB 0001 2345 67 starts with NL"/>
+  <testcase time="0" classname="| DU 20 INGB 0001 2345 67 | invalid |" name="Then it has a invalid country code"/>
+  <testcase time="0" classname="| DU 20 INGB 0001 2345 67 | invalid |" name="| DU 20 INGB 0001 2345 67 | invalid |"/>
   <testcase time="0" classname="| 1234567890123456789012345678901234 | valid |" name="When iban number is 1234567890123456789012345678901234"/>
-  <testcase time="0" classname="| 1234567890123456789012345678901234 | valid |" name="Then it is an valid iban length"/>
-  <testcase time="0" classname="| 1234567890123456789012345678901234 | valid |" name="| 1234567890123456789012345678901234 | valid |"/>
+  <testcase time="0.001" classname="| 1234567890123456789012345678901234 | valid |" name="Then it is a valid iban length">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ✽.Then it is a valid iban length(validLengthIban.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0.001" classname="| 1234567890123456789012345678901234 | valid |" name="| 1234567890123456789012345678901234 | valid |">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ✽.Then it is a valid iban length(validLengthIban.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0" classname="| 123456789012345678901234567890123 | valid |" name="When iban number is 123456789012345678901234567890123"/>
+  <testcase time="0" classname="| 123456789012345678901234567890123 | valid |" name="Then it is a valid iban length">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ✽.Then it is a valid iban length(validLengthIban.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0" classname="| 123456789012345678901234567890123 | valid |" name="| 123456789012345678901234567890123 | valid |">
+    <failure message="expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ✽.Then it is a valid iban length(validLengthIban.feature:9)
+</failure>
+  </testcase>
+  <testcase time="0" classname="| 12345678901234567890123456789012345 | invalid |" name="When iban number is 12345678901234567890123456789012345"/>
+  <testcase time="0" classname="| 12345678901234567890123456789012345 | invalid |" name="Then it is a invalid iban length"/>
+  <testcase time="0.001" classname="| 12345678901234567890123456789012345 | invalid |" name="| 12345678901234567890123456789012345 | invalid |"/>
 </testsuite>

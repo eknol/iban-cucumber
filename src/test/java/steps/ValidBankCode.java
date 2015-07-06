@@ -25,13 +25,6 @@ public class ValidBankCode {
     return result;
   }
 
-  @Then("this bank code is (.+)")
-  public void this_bank_code_is_var(String arg2) throws Throwable {
-    if (arg2.equals("invalid")) {
-      value = false;
-    } else if (arg2.equals("valid")) {
-      value = true;
-    }
-    assertEquals(value, result);
-  }
+  //TODO complete this implementation of validBankCode.feature, add your code here
+
 }

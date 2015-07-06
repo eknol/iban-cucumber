@@ -1,4 +1,54 @@
 -------------------------------------------------------------------------------
 Test set: RunTest
 -------------------------------------------------------------------------------
-Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.505 sec
+Tests run: 51, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec <<< FAILURE!
+Then the checkSum should be 20(Scenario: checkSum iban number)  Time elapsed: 0.002 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[-69]> but was:<[20]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidCheckSum.the_checkSum_should_be_var(ValidCheckSum.java:28)
+	at ?.Then the checkSum should be 20(validCheckSum.feature:9)
+
+Scenario: checkSum iban number  Time elapsed: 0.003 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[-69]> but was:<[20]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidCheckSum.the_checkSum_should_be_var(ValidCheckSum.java:28)
+	at ?.Then the checkSum should be 20(validCheckSum.feature:9)
+
+Then it is a valid iban length(| 1234567890123456789012345678901234 | valid |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ?.Then it is a valid iban length(validLengthIban.feature:9)
+
+| 1234567890123456789012345678901234 | valid |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ?.Then it is a valid iban length(validLengthIban.feature:9)
+
+Then it is a valid iban length(| 123456789012345678901234567890123 | valid |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ?.Then it is a valid iban length(validLengthIban.feature:9)
+
+| 123456789012345678901234567890123 | valid |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<false>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at steps.ValidLengthIban.it_is_a_var_iban_length(ValidLengthIban.java:35)
+	at ?.Then it is a valid iban length(validLengthIban.feature:9)
+
