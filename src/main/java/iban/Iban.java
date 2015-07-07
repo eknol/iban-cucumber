@@ -5,7 +5,7 @@ import java.math.BigInteger;
 public class Iban {
 
   public Boolean validateLength(String iban) {
-    return iban.length() < 35;
+    return iban.length() < 3;
   }
 
   public Boolean validateCountryCode(String iban) {
